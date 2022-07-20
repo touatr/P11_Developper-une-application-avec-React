@@ -1,16 +1,33 @@
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-size: 24px;
-    font-weight: 500;
+@media(max-width:3000px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    nav ul a {
+        color: #FF6060;
+    }
+
+   .accueil-link {
+        margin-right: 57px;
+    }
+
+    .active-link {
+        border-bottom: 1px solid #FF6060;
+    }
 }
 
-nav ul li {
-    margin-left: 57px;
-}
+@media(max-width:391px) {
+    nav ul {
+        margin-top: 10px;
+        padding-left: 0px;
+        font-size: 14px;
+    }
 
-nav ul a {
-    text-decoration: none;
-    color: #FF6060;
+    nav ul li {
+        margin-left: 11px;
+    }
 }

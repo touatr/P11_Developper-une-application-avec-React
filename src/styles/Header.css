@@ -1,11 +1,27 @@
-Header {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 40px;
+@media(max-width:3000px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 40px;
+    }
+    
+    #logo {
+        width: 210px;
+        height: 68px;
+    }
 }
 
-#logo {
-    height: 68px;
+@media(max-width:391px) {
+    header {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    #logo {
+        width: 145px;
+        height: 47px;
+    }
 }
+

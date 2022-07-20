@@ -1,6 +1,6 @@
-import Banner from './Banner'
-import '../styles/Main.css'
-import Gallery from './Gallery';
+import Banner from '../Banner'
+import '../../styles/Main.css'
+import Gallery from '../Gallery';
 
 
 function Main() {
