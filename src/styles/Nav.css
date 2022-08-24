@@ -14,10 +14,6 @@
    .accueil-link {
         margin-right: 57px;
     }
-
-    .active-link {
-        border-bottom: 1px solid #FF6060;
-    }
 }
 
 @media(max-width:391px) {

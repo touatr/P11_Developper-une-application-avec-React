@@ -3,11 +3,11 @@ import '../../styles/Main.css'
 import Gallery from '../Gallery';
 
 
-function Main() {
+function Main({logements}) {
     return (
         <main>
             <Banner />
-            <Gallery />
+            <Gallery logements={logements}/>
         </main>
     )
 }

@@ -1,18 +1,18 @@
 import '../../styles/Gallery.css'
-import { flatList } from '../../data/flatList'
+import { Link } from 'react-router-dom'
 
-function Gallery() {
+function Gallery({ logements }) {
 
     return (
         <section className="gallery">
             {
-                flatList.map(({id, cover, title}) => (
-                    <a href="#" key={id} className="gallery-card">
+                logements.map(({id, cover, title}) => (
+                    <Link to={"/Details/" + id}  key={id} className="gallery-card">
                         <div className='image-background'>
                             <img src={cover} alt="flatImage" />
                             <h2>{title}</h2>
                         </div>
-                    </a>
+                    </Link>
                 ))
             }
         </section>

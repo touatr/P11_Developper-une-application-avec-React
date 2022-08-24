@@ -1,0 +1,27 @@
+.error {
+    text-align: center;
+    color: #FF6060;
+}
+
+.error h1 {
+    font-weight: 700;
+    font-size: 288px;
+    margin-top: 6rem;
+    margin-bottom: 0;
+}
+
+.error h2 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+ .error a {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #FF6060;
+ }
+
+ .error a:visited {
+    color: red;
+ }
