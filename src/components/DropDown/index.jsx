@@ -18,8 +18,7 @@ function DropDown() {
                         <img src={cover} alt="down-icon" onClick = {() => {handleClick(index)}}/>
                         {active === index && (<div className='drop-down-description'>
                             <p>{description}</p>
-                        </div>)}
-                         
+                        </div>)} 
                     </div>
                 ))
             }

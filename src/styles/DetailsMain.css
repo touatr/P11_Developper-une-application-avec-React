@@ -1,5 +1,4 @@
 .details {
-    margin: 100px;
     margin-top: 10px;
 }
 
@@ -51,3 +50,38 @@
     border-radius: 2rem;
     margin-top: 14px;
 }
+
+.tags {
+    display: flex;
+    margin-left: -10px;
+}
+
+.tags .tag {
+    background: #FF6060;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 115px;
+    height: 25px;
+}
+
+.tags .tag p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.tags-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 0px;
+}
+
+.rate {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+

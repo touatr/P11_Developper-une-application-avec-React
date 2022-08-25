@@ -1,0 +1,39 @@
+.drop-downs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-down-details {
+    margin-top: 15px;
+    background: #FF6060;
+    border-radius: 10px;
+    width: 582px;
+    height: 52px;
+}
+
+.drop-down-details img {
+    margin-right: 18px;
+    width: 2%;
+    cursor: pointer;
+}
+
+.drop-down-details h2 {
+    margin-left: 18px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.drop-down-details p {
+    height: 249px;
+    margin-top: 12rem;
+    margin-left: -8.1rem;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FF6060;
+    background: #F7F7F7;
+    border-radius: 10px;
+    margin-left: 0rem;
+    margin-top: -22px;
+    font-size: 24px;
+}
