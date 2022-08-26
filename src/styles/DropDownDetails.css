@@ -11,10 +11,21 @@
     height: 52px;
 }
 
-.drop-down-details img {
+.title-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden-icon {
+    transform: rotate(180deg);
     margin-right: 18px;
-    width: 2%;
+    width: 26px;
     cursor: pointer;
+}
+
+.display-icon {
+    transform: rotate(360deg);
 }
 
 .drop-down-details h2 {
@@ -25,7 +36,6 @@
 }
 
 .drop-down-text {
-    display: none;
     height: 249px;
     padding-top: 10px;
     padding-left: 15px;
@@ -34,8 +44,7 @@
     color: #FF6060;
     background: #F7F7F7;
     border-radius: 10px;
-    margin-left: 0rem;
-    margin-top: -22px;
+    margin-top: -4px;
 }
 
 .equipment {
