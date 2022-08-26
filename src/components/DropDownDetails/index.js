@@ -24,24 +24,25 @@ function DropDownDetails({ logements }) {
     return (
         <div className='container'>
             {
-                    <div className='drop-downs'>
-                        <div className="drop-down-details">
-                            <h2>Description</h2>
-                            <img src={cover} alt="down-icon"/>
-                            <p>{logement && logement.description}</p>
-                        </div>
-                        <div className="drop-down-details">
-                            <h2>Equipements</h2>
-                            <img src={cover} alt="down-icon"/>
-                            {
-                                <p>
-                                    {logement && logement.equipments.map((equipment) => (
-                                    equipment
-                                ))}
-                                </p>
-                            }
-                        </div>
+                <div className='drop-downs'>
+                    <div className="drop-down-details">
+                        <h2>Description</h2>
+                        <img src={cover} alt="down-icon"/>
+                        <div className='drop-down-text' ><p>{logement && logement.description}</p></div>
                     </div>
+                    <div className="drop-down-details">
+                        <h2>Equipements</h2>
+                        <img src={cover} alt="down-icon"/>
+                        {
+                            <div className='drop-down-text'>
+                                {logement && logement.equipments.map((equipment) => (
+                                    <p key={equipment} className='equipment'>{equipment}</p>
+                                ))}
+                            </div>
+                        }
+                        <br/>
+                    </div>
+                </div>
             }
         </div>
     )

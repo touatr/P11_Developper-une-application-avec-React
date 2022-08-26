@@ -24,16 +24,20 @@
     color: #FFFFFF;
 }
 
-.drop-down-details p {
+.drop-down-text {
+    display: none;
     height: 249px;
-    margin-top: 12rem;
-    margin-left: -8.1rem;
+    padding-top: 10px;
+    padding-left: 15px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: #FF6060;
     background: #F7F7F7;
     border-radius: 10px;
     margin-left: 0rem;
     margin-top: -22px;
-    font-size: 24px;
+}
+
+.equipment {
+    margin-bottom: -15px;
 }
