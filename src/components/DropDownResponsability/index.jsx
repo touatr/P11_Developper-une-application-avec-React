@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import '../../styles/DropDown.css'
 import cover  from '../../assets/downIcon.png'
 
-function DropDown() {
+function DropDownResponsability() {
     const [active, setActive] = useState(false)
 
     return active ? (
-            <div className="drop-down drop-down-fiability">
+            <div className="drop-down drop-down-service">
                 <div className='title-img'>
-                    <h2>Fiabilité</h2>
+                    <h2>Responsabilité</h2>
                     <img className='hidden-icon' src={cover} alt="down-icon"
                     onClick = {() => setActive(false)}/>
                 </div>
@@ -25,7 +25,7 @@ function DropDown() {
     (
         <div className="drop-down drop-down--hidden">
             <div className='title-img'>
-                <h2>Fiabilité</h2>
+                <h2>Responsabilité</h2>
                 <img className='hidden-icon display-icon' src={cover} alt="down-icon"
                 onClick = {() => setActive(true)}/>
             </div>
@@ -33,4 +33,4 @@ function DropDown() {
     )
 }
 
-export default DropDown
+export default DropDownResponsability

@@ -41,7 +41,7 @@ function DropDownEquipment({ logements }) {
             <div className="drop-down-details">
                 <div className='title-img' >
                     <h2>Equipements</h2>
-                    <img  className='hidden-icon' src={cover} alt="down-icon"
+                    <img  className='hidden-icon display-icon' src={cover} alt="down-icon"
                     onClick={() => setActive(true)}/>
                 </div>
             </div>
