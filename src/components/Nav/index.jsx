@@ -14,7 +14,7 @@ function Nav() {
         <nav>
             <ul>
                 <NavLink to="/" className='accueil-link' style={({ isActive }) => isActive ? activeStyle : undefined}>Accueil</NavLink>
-                <NavLink to="/About" style={({ isActive }) => isActive ? activeStyle : undefined}><li>A Propos</li></NavLink>
+                <NavLink to="/About" style={({ isActive }) => isActive ? activeStyle : undefined}>A Propos</NavLink>
             </ul>
         </nav>
     )

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Header from '../../components/Header'
 import DetailsMain from '../../components/DetailsMain'
+import Footer from '../../components/Footer'
 
 
 function Details({ logements }) {
@@ -8,6 +9,7 @@ function Details({ logements }) {
         <div>
             <Header />
             <DetailsMain logements={logements}/>
+            <Footer />
         </div>
     )
 }

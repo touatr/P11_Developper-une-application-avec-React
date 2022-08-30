@@ -16,14 +16,11 @@
     }
 }
 
-@media(max-width:391px) {
+@media(max-width:400px) {
     nav ul {
-        margin-top: 10px;
-        padding-left: 0px;
+        margin-top: 20px;
+        margin-right: -5rem;
         font-size: 14px;
     }
 
-    nav ul li {
-        margin-left: 11px;
-    }
 }

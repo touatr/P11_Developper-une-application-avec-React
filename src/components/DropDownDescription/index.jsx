@@ -19,7 +19,7 @@ function DropDownDescription({ logements }) {
     const [active, setActive] = useState(false)
 
     return active ? (
-            <div className='drop-downs'>
+            <div className='drop-downs drop-downs--description'>
                 <div className="drop-down-details">
                     <div className='title-img' >
                         <h2>Description</h2>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import '../../styles/Error.css'
 import Header from '../../components/Header'
 
+
 function Error() {
     return (
         <div className='error'>

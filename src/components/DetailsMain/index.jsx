@@ -4,6 +4,7 @@ import '../../styles/DetailsMain.css'
 import rate from '../../assets/rate.png'
 import disableRate from '../../assets/disable-rate.png'
 import DropDownDetails from '../DropDownDetails'
+import GalleryDetails from '../GalleryDetails'
 
 
 function DetailsMain({ logements }) {
@@ -21,20 +22,7 @@ function DetailsMain({ logements }) {
     })
     return (
         <main>
-            <section className='details'>
-                <img className='details-img' src={logement && logement.pictures[0]} alt="pictures"/>
-                <div className='details-description'>
-                    <div className='title-location'>
-                        <h1>{ logement && logement.title }</h1>
-                        <h2>{ logement && logement.location }</h2>
-                    </div>
-                    <div className='host'>
-                        <h2 className='host-name'>{ logement && logement.host.name }</h2>
-                        <img src={logement && logement.host.picture} alt='host picture'/>
-                    </div>
-                </div>
-            </section> 
-
+            <GalleryDetails logements = {logements}/>
             <section className='tags-rating'>
                 <div className='tags'>
                     {

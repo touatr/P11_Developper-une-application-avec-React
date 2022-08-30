@@ -4,6 +4,7 @@ import DropDownRespect from '../../components/DropDownRespect'
 import DropDownResponsability from '../../components/DropDownResponsability'
 import DropDownService from '../../components/DropDownService'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 
 function About() {
@@ -15,6 +16,7 @@ function About() {
             <DropDownRespect />
             <DropDownService />
             <DropDownResponsability />
+            <Footer />
         </div>
     )
 }
