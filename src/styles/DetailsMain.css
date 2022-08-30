@@ -1,6 +1,7 @@
 @media(max-width:3000px) {
 
     .details {
+        position: relative;
         margin-top: 10px;
     }
 
@@ -85,6 +86,24 @@
         height: 30px;
         width: 30px;
         margin-right: 10px;
+    }
+
+    .arrow {
+        position: absolute;
+        cursor: pointer;
+        width: 46px;
+        height: 79px;
+    }
+
+    .arrow--right {
+        top: 10rem;
+        right: 1.5rem;
+    }
+
+    .arrow--left {
+        top: 10rem;
+        left: 1.5rem;
+        transform: rotate(180deg);
     }
 }
 

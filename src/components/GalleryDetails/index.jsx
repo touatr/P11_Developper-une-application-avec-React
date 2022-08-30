@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import '../../styles/DetailsMain.css'
+import arrow from '../../assets/arrow.png'
 
 
 function GalleryDetails( {logements} ) {
@@ -16,9 +17,29 @@ function GalleryDetails( {logements} ) {
             setLogement(tmpLogement)
         }
     })
-    return (
+    //Afficher la gallerie des photos 
+    const [active, setActive] = useState(0)
+    const pictures = logement && logement.pictures.length
+
+    function handleClickRight() {
+        setActive(active +1)
+       if(active == pictures -1) {
+            setActive(0)
+       }
+    }
+
+    function handleClickLeft() {
+        setActive(active -1)
+       if(active == 0) {
+            setActive(pictures - 1)
+       }
+    }
+
+    return  (
         <section className='details'>
-            <img className='details-img' src={logement && logement.pictures[0]} alt="pictures"/>
+            <img className='details-img' src={logement && logement.pictures[active]} alt="picture"/>
+            <img className='arrow arrow--left' src={arrow} alt='arrow' onClick={handleClickLeft}/>
+            <img className='arrow arrow--right' src={arrow} alt='arrow' onClick={handleClickRight}/>
             <div className='details-description'>
                 <div className='title-location'>
                     <h1>{ logement && logement.title }</h1>
