@@ -147,8 +147,8 @@
 
     .host {
         position: absolute;
-        top: 29.8rem;
-        left: 18.5rem;
+        top: 22.5rem;
+        left: 14rem;
     }
 
     .host img {
@@ -166,6 +166,23 @@
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 5px;
+    }
+
+    .arrow {
+        width: 15px;
+        height: 24px;
+    }
+
+    .arrow--left, .arrow--right {
+        top: 7rem;
+    }
+
+    .arrow--left {
+        left: -4rem;
+    }
+
+    .arrow--right {
+        right: -4rem;
     }
 }
 

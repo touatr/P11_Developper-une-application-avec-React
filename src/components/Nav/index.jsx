@@ -13,8 +13,10 @@ function Nav() {
     return (
         <nav>
             <ul>
-                <NavLink to="/" className='accueil-link' style={({ isActive }) => isActive ? activeStyle : undefined}>Accueil</NavLink>
-                <NavLink to="/About" style={({ isActive }) => isActive ? activeStyle : undefined}>A Propos</NavLink>
+                <NavLink to="/" className='accueil-link' style={({ isActive }) => 
+                isActive ? activeStyle : undefined}>Accueil</NavLink>
+                <NavLink to="/About" style={({ isActive }) => 
+                isActive ? activeStyle : undefined}>A Propos</NavLink>
             </ul>
         </nav>
     )
